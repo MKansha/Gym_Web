@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html id="BMI" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="box">
+          <h1>BMI Calculator</h1>
+          <div class="content">
+
+
+            <div class="input">
+                <label for="age">Age</label>
+                <input type="text" class="text-input" id="age" autocomplete="off" required/>
+            </div>
+
+            <div class="gender">
+
+                <label class="container">
+                    <input type="radio" name="radio" id="m"><p class="text">Male</p>
+                    <span class="checkmark"></span>
+                  </label>
+
+
+                <label class="container">
+                    <input type="radio" name="radio" id="f" ><p class="text">Female</p>
+                      <span class="checkmark"></span>
+                    </label>
+
+            </div>
+
+            <div class="containerHW">
+            <div class="inputH">
+              <label for="height">Height(cm)</label>
+              <input type="number" id="height" required>
+            </div>
+
+            <div class="inputW">
+              <label for="weight">Weight(kg)</label>
+              <input type="number" id="weight" required>
+            </div>
+          </div>
+
+            <button class="calculate" id="submit" onclick="calculate();">Calculate BMI</button>
+          </div>
+          <div class="res1">
+            <p>Your BMI is</p>
+            <div class="res2">
+              <div class="result">00.00</div>
+            </div class="p">
+            <p class="comment"></p>
+          </div>
+        
+      
+
+        </div>
+      </div>
+      </div>
+      </div>
+
+<script src="bmi.js"></script>
+</body>
+</html>

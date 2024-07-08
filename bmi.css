@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    --primary-color:rgb(226,55,68);
+    --primary-color-dark:rgb(192, 51, 62);
+    --primary-color-light:rgb(203, 63, 75);
+    --primary-color-extra-light:rgba(225, 79, 92, 0.853);
+    --secondary-color:#111317;
+    --secondary-color-light:#1f2125;
+    --secondary-color-extra-light:#35373b;
+    --text-light:#d1d5db;
+    --white:#ffffff;
+    --max-width:1200px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('https://wallpaperaccess.com/full/460852.jpg');
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    background-repeat:no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.box{
+    background: #fafafa;
+    width: 500px;
+    text-align: center;
+    border-radius: 1rem;
+}
+.box h1{
+    padding: 1rem 0 2rem 0;
+}
+.content {
+    padding: 0 30px;
+    
+}
+
+.input {
+    background: #fff;
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.input label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+}
+.input input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--primary-color-light);
+    width: 50%;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Nunito", sans-serif;
+}
+.gender {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background: #fff;
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+  /* Style for Radio */
+.gender .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    /* margin-bottom: 12px; */
+    margin-top: 7px;
+    cursor: pointer;
+    font-size: 22px;
+    /* -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; */
+  }
+  
+
+  .gender .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+ 
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+
+  .gender .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+ 
+  .gender .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .gender .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .gender .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+  /* END Style for Radio */
+.inputH{
+    background: #fff;
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.inputW{
+    background: #fff;
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.containerHW{
+    display: flex;
+    gap: 1rem;
+}
+.inputH input
+{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--primary-color-light);
+    width: 50%;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Nunito", sans-serif;
+}
+.inputH label{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+}
+.inputW input
+{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--primary-color-light);
+    width: 50%;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Nunito", sans-serif;
+}
+.inputW label{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+}
+.calculate{
+    width: 70%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px;
+    border-radius: 15px;
+    color: var(--white);
+    cursor: pointer;
+}
+.res2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.res1 p{
+    font-size: 2rem;
+    font-weight: 500;
+    
+}
+.res1 .result{
+    background-color: var(--primary-color);
+    width: 20%;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    color: var(--white);
+    
+}
+.res2 .result{
+    margin: 5px 0 0 0;
+}
+.box{
+    height: 650px;
+}
+

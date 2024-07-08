@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url('images/battle-rope-waves.jpg');
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* overflow: hidden; */
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+.left {
+    /* width: 50%; */
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    /* height: 40%; */
+    /* background-color: crimson; */
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    padding-top: 10px;
+}
+
+.head h1{
+    line-height: 55px;
+    font-size: 3.3vw;
+    font-weight: 500;
+}
+.head p{
+    font-size: 1.4vw;
+    font-weight: 400;
+    color: rgba(40, 40, 40, 0.745);
+}
+.form h2{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.form input{
+height: 50px;
+width: 100%;
+padding: 20px;
+font-size: 17px;
+border-radius: 13px;
+border: solid 1px rgba(134, 134, 134, 0.329);
+box-shadow: 0px 0px 9px -4px black;
+}
+.form2{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+button{
+    padding: 15px 0px;
+    border-radius: 13px;
+}
+.sign-in{
+    border: none;
+    background-color: #fa3943;
+    color: white;
+    font-size: 19px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 9px -1px #a3060e;
+    transition: all 0.2s ease-in-out;
+}
+.right {
+    width: 98%;
+    /* background-color: crimson; */
+    height: 100%;
+    overflow: hidden;
+    border-radius: 110%;
+    position: relative;
+    right: 20px;
+    /* bottom: 2px; */
+    border: 5px solid rgb(226,55,68);
+}
+.google img{
+    width: 42px;
+}
+.google{
+    transition: all 0.2s ease-in-out;
+    margin-top: 15px;
+    padding: 4px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    gap: 10px;
+    font-size: 18px;
+    border: solid 1px rgba(93, 93, 93, 0.443);
+    box-shadow: 0px 0px 9px -4px black;
+    background: transparent;
+}
+
+.right img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: top;
+}
+footer{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+footer span{
+    color: #ff1e29;
+    border-bottom: 2.5px solid transparent;
+}
+
+/* Hover State */
+
+.sign-in:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 21px -1px #ff636b;
+}
+.google:hover{
+    cursor: pointer;
+    background-color: #efeded;
+    box-shadow: 0px 0px 21px -1px #ff636b;
+}
+.form2 p{
+    border-bottom: 2.5px solid transparent;
+}
+.form2 p:hover{
+    cursor: pointer;
+    border-bottom: 2.5px solid #ff1e29;
+}
+footer span:hover{
+    cursor: pointer;
+    border-bottom: 2.5px solid #ff1e29;
+}
+.con{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+ 
+}
